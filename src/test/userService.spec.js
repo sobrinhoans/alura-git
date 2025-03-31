@@ -49,7 +49,8 @@ describe('Testando função usuarioExiste de userService', () => {
     });
 
     it('deve retornar FALSE para senha invalida', () => {
-        const email = 'valido@mail.com.it';
+
+        const email = 'valido@mail.com.br';
         const senha = 'senha_invalida';
         expect(usuarioExiste(email, senha, testeDB)).toBe(false);
     });
